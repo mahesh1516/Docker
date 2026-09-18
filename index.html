@@ -1,0 +1,1759 @@
+[200~<!DOCTYPE html>
+<html lang="en">
+	<head>
+		    <meta charset="UTF-8">
+		        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+			    <title>Spice & Soul | Premium Restaurant</title>
+
+			        <style>
+        * {
+		            margin: 0;
+			                padding: 0;
+					            box-sizing: border-box;
+						                scroll-behavior: smooth;
+								        }
+
+	        body {
+			            font-family: Arial, Helvetica, sans-serif;
+				                background: #fffaf5;
+						            color: #2d211b;
+							                line-height: 1.6;
+									        }
+
+		        /* NAVBAR */
+		        nav {
+				            position: sticky;
+					                top: 0;
+							            z-index: 1000;
+								                background: rgba(255, 250, 245, 0.96);
+										            backdrop-filter: blur(10px);
+											                border-bottom: 1px solid #eadfd7;
+													        }
+
+			        .nav-container {
+					            max-width: 1200px;
+						                margin: auto;
+								            height: 75px;
+									                display: flex;
+											            align-items: center;
+												                justify-content: space-between;
+														            padding: 0 25px;
+															            }
+
+				        .logo {
+						            font-size: 25px;
+							                font-weight: 800;
+									            color: #a63d2f;
+										            }
+
+					        .logo span {
+							            color: #2d211b;
+								            }
+
+						        .nav-links {
+								            display: flex;
+									                list-style: none;
+											            gap: 30px;
+												            }
+
+							        .nav-links a {
+									            text-decoration: none;
+										                color: #2d211b;
+												            font-weight: 600;
+													                transition: 0.3s;
+															        }
+
+								        .nav-links a:hover {
+										            color: #a63d2f;
+											            }
+
+									        .nav-btn {
+											            background: #a63d2f;
+												                color: white;
+														            padding: 11px 20px;
+															                border-radius: 8px;
+																	            text-decoration: none;
+																		                font-weight: bold;
+																				        }
+
+										        /* HERO */
+										        .hero {
+												            min-height: 650px;
+													                display: flex;
+															            align-items: center;
+																                background:
+																			                linear-gradient(rgba(30, 20, 15, 0.55), rgba(30, 20, 15, 0.65)),
+																		                url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=85")
+																				                center/cover;
+																						            color: white;
+																							            }
+
+											        .hero-content {
+													            max-width: 1200px;
+														                width: 100%;
+																            margin: auto;
+																	                padding: 60px 25px;
+																			        }
+
+												        .hero small {
+														            color: #ffd6a5;
+															                font-size: 16px;
+																	            font-weight: bold;
+																		                letter-spacing: 2px;
+																				        }
+
+													        .hero h1 {
+															            font-size: clamp(45px, 7vw, 78px);
+																                line-height: 1.05;
+																		            max-width: 750px;
+																			                margin: 20px 0;
+																					        }
+
+														        .hero p {
+																            max-width: 600px;
+																	                font-size: 18px;
+																			            color: #f4eeee;
+																				                margin-bottom: 30px;
+																						        }
+
+															        .hero-buttons {
+																	            display: flex;
+																		                gap: 15px;
+																				            flex-wrap: wrap;
+																					            }
+
+																        .primary-btn,
+																	        .secondary-btn {
+																			            display: inline-block;
+																				                padding: 14px 25px;
+																						            border-radius: 8px;
+																							                text-decoration: none;
+																									            font-weight: bold;
+																										            }
+
+																		        .primary-btn {
+																				            background: #a63d2f;
+																					                color: white;
+																							        }
+
+																			        .secondary-btn {
+																					            border: 1px solid white;
+																						                color: white;
+																								        }
+
+																				        /* GENERAL */
+																				        .section {
+																						            max-width: 1200px;
+																							                margin: auto;
+																									            padding: 90px 25px;
+																										            }
+
+																					        .section-title {
+																							            text-align: center;
+																								                margin-bottom: 50px;
+																										        }
+
+																						        .section-title span {
+																								            color: #a63d2f;
+																									                font-weight: bold;
+																											            text-transform: uppercase;
+																												                letter-spacing: 2px;
+																														            font-size: 13px;
+																															            }
+
+																							        .section-title h2 {
+																									            font-size: 40px;
+																										                margin: 8px 0;
+																												        }
+
+																								        .section-title p {
+																										            color: #75675f;
+																											                max-width: 600px;
+																													            margin: auto;
+																														            }
+
+																									        /* ABOUT */
+																									        .about {
+																											            display: grid;
+																												                grid-template-columns: 1fr 1fr;
+																														            gap: 60px;
+																															                align-items: center;
+																																	        }
+
+																										        .about-image img {
+																												            width: 100%;
+																													                height: 450px;
+																															            object-fit: cover;
+																																                border-radius: 18px;
+																																		        }
+
+																											        .about-text h2 {
+																													            font-size: 42px;
+																														                margin-bottom: 20px;
+																																        }
+
+																												        .about-text p {
+																														            color: #665951;
+																															                margin-bottom: 20px;
+																																	        }
+
+																													        .features {
+																															            display: grid;
+																																                grid-template-columns: 1fr 1fr;
+																																		            gap: 15px;
+																																			                margin-top: 25px;
+																																					        }
+
+																														        .feature {
+																																            background: white;
+																																	                padding: 18px;
+																																			            border-radius: 10px;
+																																				                border: 1px solid #eadfd7;
+																																						        }
+
+																															        .feature stron            width: 100%;
+																																            height: 380px;
+																																	                object-fit: cover;
+																																			            border-radius: 18px;
+																																				            }
+
+																																					            .special small {
+																																							                color: #ffd6a5;
+																																									            letter-spacing: 2px;
+																																										                font-weight: bold;
+																																												        }
+
+																																						            .special h2 {
+																																								                font-size: 45px;
+																																										            margin: 15px 0;
+																																											            }
+
+																																							            .special p {
+																																									                color: #d6cbc5;
+																																											            margin-bottom: 25px;
+																																												            }
+
+																																								            .special-price {
+																																										                font-size: 30px;
+																																												            color: #ffd6a5;
+																																													                font-weight: bold;
+																																															            margin-bottom: 25px;
+																																																            }
+
+																																									            /* REVIEWS */
+																																									            .reviews {
+																																											                display: grid;
+																																													            grid-template-columns: repeat(3, 1fr);
+																																														                gap: 25px;
+																																																        }
+
+																																										            .review {
+																																												                background: white;
+																																														            border: 1px solid #eadfd7;
+																																															                border-radius: 15px;
+																																																	            padding: 28px;
+																																																		            }
+
+																																											            .stars {
+																																													                color: #d58a25;
+																																															            font-size: 20px;
+																																																                margin-bottom: 15px;
+																																																		        }
+
+																																												            .review p {
+																																														                color: #665951;
+																																																            margin-bottom: 20px;
+																																																	            }
+
+																																													            .review strong {
+																																															                color: #2d211b;
+																																																	        }
+
+																																														            /* RESERVATION */
+																																														            .reservation {
+																																																                background: #f3e5dd;
+																																																		        }
+
+																																															            .reservation-container {
+																																																	                max-width: 900px;
+																																																			            margin: auto;
+																																																				                padding: 80px 25px;
+																																																						        }
+
+																																																            .form {
+																																																		                background: white;
+																																																				            padding: 35px;
+																																																					                border-radius: 18px;
+																																																							            box-shadow: 0 15px 35px rgba(50, 30, 20, 0.08);
+																																																								            }
+
+																																																	            .form-grid {
+																																																			                display: grid;
+																																																					            grid-template-columns: 1fr 1fr;
+																																																						                gap: 18px;
+																																																								        }
+
+																																																		            .form-group {
+																																																				                display: flex;
+																																																						            flex-direction: column;
+																																																							            }
+
+																																																			            .form-group.full {
+																																																					                grid-column: 1 / -1;
+																																																							        }
+
+																																																				            label {
+																																																						                font-weight: bold;
+																																																								            margin-bottom: 7px;
+																																																									            }
+
+																																																					            input,
+																																																						            select,
+																																																							            textarea {
+																																																									                width: 100%;
+																																																											            padding: 13px;
+																																																												                border: 1px solid #ddd0c8;
+																																																														            border-radius: 8px;
+																																																															                font: inherit;
+																																																																	            outline: none;
+																																																																		            }
+
+																																																								            input:focus,
+																																																									            select:focus,
+																																																										            textarea:focus {
+																																																												                border-color: #a63d2f;
+																																																														        }
+
+																																																											            textarea {
+																																																													                min-height: 100px;
+																																																															            resize: vertical;
+																																																																            }
+
+																																																												            .submit-btn {
+																																																														                margin-top: 20px;
+																																																																            width: 100%;
+																																																																	                padding: 15px;
+																																																																			            border: none;
+																																																																				                border-radius: 8px;
+																																																																						            background: #a63d2f;
+																																																																							                color: white;
+																																																																									            font-size: 16px;
+																																																																										                font-weight: bold;
+																																																																												            cursor: pointer;
+																																																																													            }
+
+																																																													            .submit-btn:hover {
+																																																															                background: #873126;
+																																																																	        }
+
+																																																														            /* FOOTER */
+																																																														            footer {
+																																																																                background: #211814;
+																																																																		            color: white;
+																																																																			                padding: 60px 25px 25px;
+																																																																					        }
+
+																																																															            .footer-grid {
+																																																																	                max-width: 1200px;
+																																																																			            margin: auto;
+																																																																				                display: grid;
+																																																																						            grid-template-columns: 2fr 1fr 1fr 1fr;
+																																																																							                gap: 40px;
+																																																																									        }
+
+																																																																            footer h3 {
+																																																																		                margin-bottom: 15px;
+																																																																				        }
+
+																																																																	            footer p,
+																																																																		            footer li {
+																																																																				                color: #cbbfba;
+																																																																						            font-size: 14px;
+																																																																							            }
+
+																																																																			            footer ul {
+																																																																					                list-style: none;
+																																																																							        }
+
+																																																																				            footer li {
+																																																																						                margin-bottom: 8px;
+																																																																								        }
+
+																																																																					            .footer-logo {
+																																																																							                font-size: 25px;
+																																																																									            font-weight: bold;
+																																																																										                color: #ffd6a5;
+																																																																												        }
+
+																																																																						            .copyright {
+																																																																								                max-width: 1200px;
+																																																																										            margin: 40px auto 0;
+																																																																											                padding-top: 20px;
+																																																																													            border-top: 1px solid #493b35;
+																																																																														                text-align: center;
+																																																																																            color: #a99d97;
+																																																																																	                font-size: 13px;
+																																																																																			        }
+
+																																																																							            /* MOBILE */
+																																																																							            @media (max-width: 900px) {
+
+																																																																									                .nav-links {
+																																																																												                display: none;
+																																																																														            }
+
+																																																																											            .about,
+																																																																												                .special-container {
+																																																																															                grid-template-columns: 1fr;
+																																																																																	            }
+
+																																																																														            .menu-grid,
+																																																																															                .re                </p>
+
+																																																																																	                <div class="special-price">
+																																																																																			                    ₹699
+																																																																																						                    </div>
+
+																																																																																					                    <a href="#reservation" class="primary-btn">
+																																																																																							                        Reserve Your Table
+																																																																																											                </a>
+
+																																																																																										            </div>
+
+																																																																																											            </div>
+
+																																																																																												        </section>
+
+
+																																																																																													    <!-- REVIEWS -->
+																																																																																													        <section class="section" id="reviews">
+
+																																																																																														        <div class="section-title">
+
+																																																																																															            <span>Testimonials</span>
+
+																																																																																																                <h2>What our guests say</h2>
+
+																																																																																																		            <p>
+																																																																																																			                    Good food makes people happy.
+																																																																																																					                </p>
+
+																																																																																																							        </div>
+
+
+																																																																																																								        <div class="reviews">
+
+																																																																																																									            <div class="review">
+
+																																																																																																										                    <div class="stars">
+																																																																																																												                        ★★★★★
+																																																																																																															                </div>
+
+																																																																																																																	                <p>
+																																																																																																																			                    "Amazing food and beautiful atmosphere.
+																																																																																																																					                        The service was excellent and every dish
+																																																																																																																									                    tasted fresh."
+																																																																																																																								                </p>
+
+																																																																																																																										                <strong>— Rahul M.</strong>
+
+																																																																																																																												            </div>
+
+
+																																																																																																																													                <div class="review">
+
+																																																																																																																															                <div class="stars">
+																																																																																																																																	                    ★★★★★
+																																																																																																																																			                    </div>
+
+																																																																																																																																					                    <p>
+																																																																																																																																							                        "One of the best dining experiences I've had.
+																																																																																																																																										                    The pasta and cheesecake were absolutely
+																																																																																																																																													                        delicious."
+																																																																																																																																												                    </p>
+
+																																																																																																																																														                    <strong>— Priya S.</strong>
+
+																																																																																																																																																                </div>
+
+
+																																																																																																																																																		            <div class="review">
+
+																																																																																																																																																			                    <div class="stars">
+																																																																																																																																																					                        ★★★★★
+																																																																																																																																																								                </div>
+
+																																																																																																																																																										                <p>
+																																																																																																																																																												                    "Perfect place for a family dinner.
+																																																																																																																																																														                        Great food, friendly staff and a very
+																																																																																																																																																																		                    comfortable ambience."
+																																																																																																																																																																	                </p>
+
+																																																																																																																																																																			                <strong>— Arjun K.</strong>
+
+																																																																																																																																																																					            </div>
+
+																																																																																																																																																																						            </div>
+
+																																																																																																																																																																							        </section>
+
+
+																																																																																																																																																																								    <!-- RESERVATION -->
+																																																																																																																																																																								        <section class="reservation" id="reservation">
+
+																																																																																																																																																																									        <div class="reservation-container">
+
+																																																																																																																																																																										            <div class="section-title">
+
+																																																																																																																																																																											                    <span>Reservation</span>
+
+																																																																																																																																																																													                    <h2>Book your table</h2>
+
+																																																																																																																																																																															                    <p>
+																																																																																																																																																																																	                        Planning a special evening?
+																																																																																																																																																																																				                    Reserve your table with us.
+																																																																																																																																																																																						                    </p>
+
+																																																																																																																																																																																								                </div>
+
+
+																																																																																																																																																																																										            <form class="form" onsubmit="bookTable(event)">
+
+																																																																																																																																																																																											                    <div class="form-grid">
+
+																																																																																																																																																																																													                        <div class="form-group">
+
+																																																																																																																																																																																																                        <label>Name</label>
+
+																																																																																																																																																																																																			                        <input
+																																																																																																																																																																																																							                            type="text"
+																																																																																																																																																																																																						                            placeholder="Your name"
+																																																																																																																																																																																																									                                required>
+
+																																																																																																																																																																																																							                    </div>
+
+
+																																																																																																																																																																																																									                        <div class="form-group">
+
+																																																																																																																																																																																																												                        <label>Phone</label>
+
+																																																																																																																																																																																																															                        <input
+																																																																																																																																																																																																																			                            type="tel"
+																																																																																																																																																																																																																		                            placeholder="Your phone number"
+																																																																																																																																																																																																																					                                required>
+
+																																																																																																																																																																																																																			                    </div>
+
+
+																																																																																																																																																																																																																					                        <div class="form-group">
+
+																																																																																																																																																																																																																								                        <label>Date</label>
+
+																																																																																																																																																																																																																											                        <input
+																																																																																																																																																																																																																															                            type="date"
+																																																																																																																																																																																																																														                            required>
+
+																																																																																																																																																																																																																															                    </div>
+
+
+																																																																																																																																																																																																																																	                        <div class="form-group">
+
+																																																																																																																																																																																																																																				                        <label>Time</label>
+
+																																																																																																																																																																																																																																							                        <select requir<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Spice & Soul | Premium Restaurant</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #fffaf5;
+            color: #2d211b;
+            line-height: 1.6;
+        }
+
+        /* NAVBAR */
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            background: rgba(255, 250, 245, 0.96);
+            backdrop-filter: blur(10px);
+            border-bottom: 1px solid #eadfd7;
+        }
+
+        .nav-container {
+            max-width: 1200px;
+            margin: auto;
+            height: 75px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 25px;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: 800;
+            color: #a63d2f;
+        }
+
+        .logo span {
+            color: #2d211b;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #2d211b;
+            font-weight: 600;
+            transition: 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #a63d2f;
+        }
+
+        .nav-btn {
+            background: #a63d2f;
+            color: white;
+            padding: 11px 20px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 650px;
+            display: flex;
+            align-items: center;
+            background:
+                linear-gradient(rgba(30, 20, 15, 0.55), rgba(30, 20, 15, 0.65)),
+                url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=85")
+                center/cover;
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 1200px;
+            width: 100%;
+            margin: auto;
+            padding: 60px 25px;
+        }
+
+        .hero small {
+            color: #ffd6a5;
+            font-size: 16px;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .hero h1 {
+            font-size: clamp(45px, 7vw, 78px);
+            line-height: 1.05;
+            max-width: 750px;
+            margin: 20px 0;
+        }
+
+        .hero p {
+            max-width: 600px;
+            font-size: 18px;
+            color: #f4eeee;
+            margin-bottom: 30px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .primary-btn,
+        .secondary-btn {
+            display: inline-block;
+            padding: 14px 25px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .primary-btn {
+            background: #a63d2f;
+            color: white;
+        }
+
+        .secondary-btn {
+            border: 1px solid white;
+            color: white;
+        }
+
+        /* GENERAL */
+        .section {
+            max-width: 1200px;
+            margin: auto;
+            padding: 90px 25px;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title span {
+            color: #a63d2f;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-size: 13px;
+        }
+
+        .section-title h2 {
+            font-size: 40px;
+            margin: 8px 0;
+        }
+
+        .section-title p {
+            color: #75675f;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        /* ABOUT */
+        .about {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-image img {
+            width: 100%;
+            height: 450px;
+            object-fit: cover;
+            border-radius: 18px;
+        }
+
+        .about-text h2 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+
+        .about-text p {
+            color: #665951;
+            margin-bottom: 20px;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 25px;
+        }
+
+        .feature {
+            background: white;
+            padding: 18px;
+            border-radius: 10px;
+            border: 1px solid #eadfd7;
+        }
+
+        .feature strong {
+            display: block;
+            margin-bottom: 5px;
+            color: #a63d2f;
+        }
+
+        /* MENU */
+        .menu-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .menu-card {
+            background: white;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 1px solid #eadfd7;
+            transition: 0.3s;
+        }
+
+        .menu-card:hover {
+            transform: translateY(-7px);
+            box-shadow: 0 15px 35px rgba(50, 30, 20, 0.1);
+        }
+
+        .menu-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .menu-info {
+            padding: 22px;
+        }
+
+        .menu-top {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+            margin-bottom: 8px;
+        }
+
+        .menu-top h3 {
+            font-size: 20px;
+        }
+
+        .price {
+            color: #a63d2f;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+
+        .menu-info p {
+            color: #75675f;
+            font-size: 14px;
+        }
+
+        .tag {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 5px 10px;
+            background: #f8e8e2;
+            color: #a63d2f;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        /* SPECIAL */
+        .special {
+            background: #2d211b;
+            color: white;
+        }
+
+        .special-container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 75px 25px;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .special img {
+            width: 100%;
+            height: 380px;
+            object-fit: cover;
+            border-radius: 18px;
+        }
+
+        .special small {
+            color: #ffd6a5;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+
+        .special h2 {
+            font-size: 45px;
+            margin: 15px 0;
+        }
+
+        .special p {
+            color: #d6cbc5;
+            margin-bottom: 25px;
+        }
+
+        .special-price {
+            font-size: 30px;
+            color: #ffd6a5;
+            font-weight: bold;
+            margin-bottom: 25px;
+        }
+
+        /* REVIEWS */
+        .reviews {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .review {
+            background: white;
+            border: 1px solid #eadfd7;
+            border-radius: 15px;
+            padding: 28px;
+        }
+
+        .stars {
+            color: #d58a25;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+
+        .review p {
+            color: #665951;
+            margin-bottom: 20px;
+        }
+
+        .review strong {
+            color: #2d211b;
+        }
+
+        /* RESERVATION */
+        .reservation {
+            background: #f3e5dd;
+        }
+
+        .reservation-container {
+            max-width: 900px;
+            margin: auto;
+            padding: 80px 25px;
+        }
+
+        .form {
+            background: white;
+            padding: 35px;
+            border-radius: 18px;
+            box-shadow: 0 15px 35px rgba(50, 30, 20, 0.08);
+        }
+
+        .form-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 18px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-group.full {
+            grid-column: 1 / -1;
+        }
+
+        label {
+            font-weight: bold;
+            margin-bottom: 7px;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 13px;
+            border: 1px solid #ddd0c8;
+            border-radius: 8px;
+            font: inherit;
+            outline: none;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            border-color: #a63d2f;
+        }
+
+        textarea {
+            min-height: 100px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            margin-top: 20px;
+            width: 100%;
+            padding: 15px;
+            border: none;
+            border-radius: 8px;
+            background: #a63d2f;
+            color: white;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .submit-btn:hover {
+            background: #873126;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #211814;
+            color: white;
+            padding: 60px 25px 25px;
+        }
+
+        .footer-grid {
+            max-width: 1200px;
+            margin: auto;
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+        }
+
+        footer h3 {
+            margin-bottom: 15px;
+        }
+
+        footer p,
+        footer li {
+            color: #cbbfba;
+            font-size: 14px;
+        }
+
+        footer ul {
+            list-style: none;
+        }
+
+        footer li {
+            margin-bottom: 8px;
+        }
+
+        .footer-logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #ffd6a5;
+        }
+
+        .copyright {
+            max-width: 1200px;
+            margin: 40px auto 0;
+            padding-top: 20px;
+            border-top: 1px solid #493b35;
+            text-align: center;
+            color: #a99d97;
+            font-size: 13px;
+        }
+
+        /* MOBILE */
+        @media (max-width: 900px) {
+
+            .nav-links {
+                display: none;
+            }
+
+            .about,
+            .special-container {
+                grid-template-columns: 1fr;
+            }
+
+            .menu-grid,
+            .reviews {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        @media (max-width: 600px) {
+
+            .nav-btn {
+                display: none;
+            }
+
+            .hero {
+                min-height: 580px;
+            }
+
+            .hero h1 {
+                font-size: 48px;
+            }
+
+            .section {
+                padding: 65px 20px;
+            }
+
+            .section-title h2 {
+                font-size: 32px;
+            }
+
+            .about-text h2,
+            .special h2 {
+                font-size: 34px;
+            }
+
+            .about-image img {
+                height: 330px;
+            }
+
+            .menu-grid,
+            .reviews,
+            .features,
+            .form-grid,
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .form-group.full {
+                grid-column: auto;
+            }
+
+            .special img {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav>
+        <div class="nav-container">
+
+            <div class="logo">
+                Spice <span>&</span> Soul
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+                <li><a href="#reservation">Contact</a></li>
+            </ul>
+
+            <a href="#reservation" class="nav-btn">
+                Reserve Table
+            </a>
+
+        </div>
+    </nav>
+
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+
+            <small>WELCOME TO SPICE & SOUL</small>
+
+            <h1>
+                Great food.<br>
+                Good mood.
+            </h1>
+
+            <p>
+                Experience handcrafted dishes, warm hospitality,
+                and unforgettable flavors made with fresh ingredients
+                every single day.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#menu" class="primary-btn">
+                    Explore Menu
+                </a>
+
+                <a href="#reservation" class="secondary-btn">
+                    Book a Table
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+
+        <div class="about">
+
+            <div class="about-image">
+                <img
+                    src="https://images.unsplash.com/photo-1552566626-52f8b828add9?auto=format&fit=crop&w=900&q=85"
+                    alt="Restaurant interior">
+            </div>
+
+            <div class="about-text">
+
+                <h2>
+                    A place where food
+                    feels like home.
+                </h2>
+
+                <p>
+                    At Spice & Soul, we believe dining should be
+                    more than just a meal. It should be an experience
+                    filled with delicious food, meaningful conversations,
+                    and beautiful memories.
+                </p>
+
+                <p>
+                    Our chefs combine traditional recipes with modern
+                    techniques to create dishes that are full of
+                    character and flavor.
+                </p>
+
+                <div class="features">
+
+                    <div class="feature">
+                        <strong>🍃 Fresh Ingredients</strong>
+                        Locally sourced ingredients.
+                    </div>
+
+                    <div class="feature">
+                        <strong>👨‍🍳 Expert Chefs</strong>
+                        Crafted by passionate chefs.
+                    </div>
+
+                    <div class="feature">
+                        <strong>❤️ Made With Love</strong>
+                        Every plate tells a story.
+                    </div>
+
+                    <div class="feature">
+                        <strong>✨ Cozy Atmosphere</strong>
+                        Perfect for every occasion.
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- MENU -->
+    <section class="section" id="menu">
+
+        <div class="section-title">
+
+            <span>Our Menu</span>
+
+            <h2>Favorites from our kitchen</h2>
+
+            <p>
+                A selection of our most-loved dishes,
+                prepared fresh for you.
+            </p>
+
+        </div>
+
+
+        <div class="menu-grid">
+
+            <!-- CARD 1 -->
+            <div class="menu-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1565299624946-b28f40a0ae38?auto=format&fit=crop&w=700&q=80"
+                    alt="Pizza">
+
+                <div class="menu-info">
+
+                    <div class="menu-top">
+                        <h3>Truffle Pizza</h3>
+                        <span class="price">₹549</span>
+                    </div>
+
+                    <p>
+                        Truffle cream, mozzarella, mushrooms
+                        and fresh herbs.
+                    </p>
+
+                    <span class="tag">Chef's Choice</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARD 2 -->
+            <div class="menu-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1555949258-eb67b1ef0ceb?auto=format&fit=crop&w=700&q=80"
+                    alt="Pasta">
+
+                <div class="menu-info">
+
+                    <div class="menu-top">
+                        <h3>Creamy Pasta</h3>
+                        <span class="price">₹449</span>
+                    </div>
+
+                    <p>
+                        Handmade pasta with parmesan,
+                        garlic and creamy sauce.
+                    </p>
+
+                    <span class="tag">Popular</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARD 3 -->
+            <div class="menu-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=700&q=80"
+                    alt="Steak">
+
+                <div class="menu-info">
+
+                    <div class="menu-top">
+                        <h3>Grilled Steak</h3>
+                        <span class="price">₹899</span>
+                    </div>
+
+                    <p>
+                        Premium grilled steak served with
+                        roasted vegetables.
+                    </p>
+
+                    <span class="tag">Signature</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARD 4 -->
+            <div class="menu-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1603133872878-684f208fb84b?auto=format&fit=crop&w=700&q=80"
+                    alt="Rice">
+
+                <div class="menu-info">
+
+                    <div class="menu-top">
+                        <h3>Special Biryani</h3>
+                        <span class="price">₹399</span>
+                    </div>
+
+                    <p>
+                        Fragrant basmati rice, spices,
+                        herbs and tender vegetables.
+                    </p>
+
+                    <span class="tag">Indian Special</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARD 5 -->
+            <div class="menu-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=700&q=80"
+                    alt="Dessert">
+
+                <div class="menu-info">
+
+                    <div class="menu-top">
+                        <h3>Berry Cheesecake</h3>
+                        <span class="price">₹299</span>
+                    </div>
+
+                    <p>
+                        Creamy cheesecake topped with fresh
+                        seasonal berries.
+                    </p>
+
+                    <span class="tag">Dessert</span>
+
+                </div>
+
+            </div>
+
+
+            <!-- CARD 6 -->
+            <div class="menu-card">
+
+                <img
+                    src="https://images.unsplash.com/photo-1544145945-f90425340c7e?auto=format&fit=crop&w=700&q=80"
+                    alt="Drink">
+
+                <div class="menu-info">
+
+                    <div class="menu-top">
+                        <h3>Fresh Mocktail</h3>
+                        <span class="price">₹199</span>
+                    </div>
+
+                    <p>
+                        Fresh fruits, herbs and sparkling
+                        water blended perfectly.
+                    </p>
+
+                    <span class="tag">Refreshing</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- SPECIAL -->
+    <section class="special">
+
+        <div class="special-container">
+
+            <img
+                src="https://images.unsplash.com/photo-1547592180-85f173990554?auto=format&fit=crop&w=1000&q=85"
+                alt="Special dish">
+
+            <div>
+
+                <small>TODAY'S SPECIAL</small>
+
+                <h2>
+                    Smoky Grilled
+                    Chicken
+                </h2>
+
+                <p>
+                    Tender chicken marinated with our signature
+                    spice blend, slow-grilled and served with
+                    roasted vegetables and house sauce.
+                </p>
+
+                <div class="special-price">
+                    ₹699
+                </div>
+
+                <a href="#reservation" class="primary-btn">
+                    Reserve Your Table
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- REVIEWS -->
+    <section class="section" id="reviews">
+
+        <div class="section-title">
+
+            <span>Testimonials</span>
+
+            <h2>What our guests say</h2>
+
+            <p>
+                Good food makes people happy.
+            </p>
+
+        </div>
+
+
+        <div class="reviews">
+
+            <div class="review">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    "Amazing food and beautiful atmosphere.
+                    The service was excellent and every dish
+                    tasted fresh."
+                </p>
+
+                <strong>— Rahul M.</strong>
+
+            </div>
+
+
+            <div class="review">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    "One of the best dining experiences I've had.
+                    The pasta and cheesecake were absolutely
+                    delicious."
+                </p>
+
+                <strong>— Priya S.</strong>
+
+            </div>
+
+
+            <div class="review">
+
+                <div class="stars">
+                    ★★★★★
+                </div>
+
+                <p>
+                    "Perfect place for a family dinner.
+                    Great food, friendly staff and a very
+                    comfortable ambience."
+                </p>
+
+                <strong>— Arjun K.</strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- RESERVATION -->
+    <section class="reservation" id="reservation">
+
+        <div class="reservation-container">
+
+            <div class="section-title">
+
+                <span>Reservation</span>
+
+                <h2>Book your table</h2>
+
+                <p>
+                    Planning a special evening?
+                    Reserve your table with us.
+                </p>
+
+            </div>
+
+
+            <form class="form" onsubmit="bookTable(event)">
+
+                <div class="form-grid">
+
+                    <div class="form-group">
+
+                        <label>Name</label>
+
+                        <input
+                            type="text"
+                            placeholder="Your name"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Phone</label>
+
+                        <input
+                            type="tel"
+                            placeholder="Your phone number"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Date</label>
+
+                        <input
+                            type="date"
+                            required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Time</label>
+
+                        <select required>
+
+                            <option value="">
+                                Select time
+                            </option>
+
+                            <option>12:00 PM</option>
+                            <option>1:00 PM</option>
+                            <option>2:00 PM</option>
+                            <option>7:00 PM</option>
+                            <option>8:00 PM</option>
+                            <option>9:00 PM</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Guests</label>
+
+                        <select required>
+
+                            <option value="">
+                                Number of guests
+                            </option>
+
+                            <option>1 Guest</option>
+                            <option>2 Guests</option>
+                            <option>3 Guests</option>
+                            <option>4 Guests</option>
+                            <option>5+ Guests</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label>Occasion</label>
+
+                        <select>
+
+                            <option>Regular Dining</option>
+                            <option>Birthday</option>
+                            <option>Anniversary</option>
+                            <option>Business Dinner</option>
+                            <option>Other</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group full">
+
+                        <label>Special Request</label>
+
+                        <textarea
+                            placeholder="Any special requests?"></textarea>
+
+                    </div>
+
+                </div>
+
+
+                <button class="submit-btn" type="submit">
+                    Confirm Reservation
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <div class="footer-grid">
+
+            <div>
+
+                <div class="footer-logo">
+                    Spice & Soul
+                </div>
+
+                <p>
+                    Fresh ingredients, memorable flavors
+                    and warm hospitality.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>Explore</h3>
+
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Menu</li>
+                    <li>Reservations</li>
+                </ul>
+
+            </div>
+
+
+            <div>
+
+                <h3>Opening Hours</h3>
+
+                <ul>
+                    <li>Mon – Fri: 11 AM – 11 PM</li>
+                    <li>Saturday: 11 AM – 12 AM</li>
+                    <li>Sunday: 12 PM – 10 PM</li>
+                </ul>
+
+            </div>
+
+
+            <div>
+
+                <h3>Contact</h3>
+
+                <ul>
+                    <li>📍 Hyderabad, India</li>
+                    <li>📞 +91 98765 43210</li>
+                    <li>✉️ hello@spiceandsoul.com</li>
+                </ul>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+            © 2026 Spice & Soul. All rights reserved.
+        </div>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script>
+
+        function bookTable(event) {
+
+            event.preventDefault();
+
+            alert(
+                "Thank you! Your table reservation request has been received."
+            );
+
+        }
+
+    </script>
+
+</body>
+</html>
